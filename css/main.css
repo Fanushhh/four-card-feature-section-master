@@ -101,7 +101,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .card-item--title {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .card-item--description {
   color: hsl(229deg, 6%, 66%);
