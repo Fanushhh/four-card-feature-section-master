@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"); /*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.card__container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 600px) {
+  .card__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.left-part {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-part {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-part {
+  max-width: 400px;
+}
+
+.card-item {
+  background-color: #fff;
+  text-align: left;
+  display: grid;
+  padding: 30px 20px;
+  border-radius: 10px;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  max-width: 400px;
+  transition: 0.5s ease-in-out;
+}
+.card-item--title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.card-item--description {
+  color: hsl(229deg, 6%, 66%);
+}
+
+.card-item:hover {
+  transform: scale(1.1);
+}
+
+.supervisor {
+  border-top: 3px solid hsl(180deg, 62%, 55%);
+  box-shadow: 1px 5px 15px rgba(69, 211, 211, 0.2);
+}
+
+.builder {
+  border-top: 3px solid hsl(0deg, 78%, 62%);
+  box-shadow: 1px 5px 15px rgba(234, 83, 83, 0.2);
+}
+
+.karma {
+  border-top: 3px solid hsl(34deg, 97%, 64%);
+  box-shadow: 1px 5px 15px rgba(252, 175, 74, 0.2);
+}
+@media screen and (min-width: 600px) {
+  .karma {
+    grid-column: 2;
+    margin-top: 30px;
+  }
+}
+
+.calculator {
+  border-top: 3px solid hsl(212deg, 86%, 64%);
+  box-shadow: 1px 5px 15px rgba(84, 158, 242, 0.2);
+}
+
+.card-item img {
+  padding-top: 10px;
+  justify-self: flex-end;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.container {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.container__header {
+  margin-top: 75px;
+  padding: 0 10px;
+  color: hsl(234deg, 12%, 34%);
+  display: flex;
+  flex-direction: column;
+}
+.container__header--subtitle {
+  font-weight: 200;
+  font-size: 26px;
+}
+.container__header--title {
+  font-weight: 600;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+.container__header--description {
+  color: hsl(229deg, 6%, 66%);
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 600px) {
+  .container__header {
+    max-width: 550px;
+  }
+  .container__header--title {
+    font-size: 35px;
+  }
+  .container__header--subtitle {
+    font-size: 35px;
+  }
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

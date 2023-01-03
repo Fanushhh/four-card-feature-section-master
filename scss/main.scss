@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'resets';
+@import 'responsiveness';
+@import 'card';
+
+body{
+    font-size: $font-size;
+    font-family: $font-family;
+    background-color: $neutral-light-gray;
+}
+
+.container{
+    width: 90%;
+    display:grid;
+    margin:0 auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.container__header{
+    margin-top:75px;
+    padding:0 10px;
+    color:$neutral-dark-blue;
+    display:flex;
+    flex-direction: column;
+    &--subtitle{
+        font-weight: $font-slim-jim;
+        
+        font-size: 26px;
+    }
+    &--title{
+        font-weight: 600;
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    &--description{
+        color:$neutral-gray-blue;
+        padding-bottom: 60px;
+        
+    }
+    @include for-mobile-up{
+        max-width: 550px;
+        &--title{
+            font-size: 35px;
+        }
+        &--subtitle{
+            font-size: 35px;
+        }
+    }
+}
+
+
+
+.attribution { 
+    margin-top: 30px;
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
