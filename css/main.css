@@ -93,18 +93,19 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   text-align: left;
   display: grid;
-  padding: 30px 20px;
+  padding: 40px 30px;
   border-radius: 10px;
   grid-template-rows: 0.5fr 1fr 1fr;
   max-width: 400px;
   transition: 0.5s ease-in-out;
 }
 .card-item--title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 .card-item--description {
   color: hsl(229deg, 6%, 66%);
+  padding-right: 30px;
 }
 
 .card-item:hover {
@@ -154,6 +155,11 @@ body {
   margin: 0 auto;
   text-align: center;
   justify-items: center;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .container__header {
